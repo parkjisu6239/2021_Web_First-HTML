@@ -1,0 +1,120 @@
+body {
+  position: relative;
+  box-sizing: border-box;
+  width: 1400px;
+  margin: 50px auto;
+  background-color: rgb(19, 19, 19);
+}
+
+.place{
+  background-color: rgb(19, 19, 19);
+  margin: auto;
+  text-align: center;
+  /* 하위에 있는 h1을 인라인블록으로 하고 정렬을 하려면 상위에다 텍스트어라인 해야함*/
+}
+
+.fixed {
+  /* 화면 내 특정 위치에 고정, 스크롤시에도 따라옴*/
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  height: 100px;
+  width: 100px;
+  object-fit:cover;
+}
+
+.fixed:hover {
+  /* 커서를 가져가면 변경될 내용 작성*/
+  cursor: pointer;
+  bottom: 60px;
+  right: 40px;
+  object-fit:cover;
+  transition: all 0.3s ease-in-out;
+  /* 프리미어 에펙에서 키프레임 이즈인아웃이랑 똑같음! */
+}
+
+h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: darkred;
+  border-radius: 50px;
+  padding: 20px 40px;
+  margin: 10px auto 40px auto;
+  display: inline-block;
+  font-size: 50px;
+}
+
+.info{
+  color: white;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif ;
+}
+
+.movie-set {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.each-movie {
+  display: inline-block;
+  vertical-align: top;
+  margin: 30px 15px;
+  width: 400px;
+  text-align: left;
+}
+
+.title-ko {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: locus_sangsang;
+  display: inline;
+  color: aliceblue;
+}
+
+.title-en {
+  font-size: 13px;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline;
+  color: aliceblue;
+}
+
+.image-setting {
+  height: 400px;
+  width: 400px;
+  object-fit:cover;
+  border: 1px solid black;
+}
+
+.score {
+  background-color: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-top: 5px;
+}
+
+.score-title {
+  display: inline;
+  font-weight: bold;
+  font-family: DX영화자막;
+}
+
+.score-star {
+  position: relative;
+  display: inline;
+  left: 5px
+}
+
+.score-grade {
+  position: relative;
+  display: inline;
+  left: 7px;
+  font-family: DX영화자막;
+}
+
+.sub {
+  background-color: rgb(253, 244, 234);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: DX영화자막;
+}
